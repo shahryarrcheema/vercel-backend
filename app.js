@@ -7,7 +7,8 @@ const logger = require('morgan');
 const cors = require('cors')
 
 const corsOptions={
-  origin:'https://your-frontend-url.vercel.app',
+//  origin:'https://your-frontend-url.vercel.app',
+origin:'*',
 }
 
 
