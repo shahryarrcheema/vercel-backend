@@ -7,9 +7,8 @@ const logger = require('morgan');
 const cors = require('cors')
 
 const corsOptions={
-   origin: "https://vercel-frontend-zeta-one.vercel.app", // ya "*" for all
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"]
+   origin: process.env.FRONTEND_URL
+  
 //origin:'*',
 }
 
