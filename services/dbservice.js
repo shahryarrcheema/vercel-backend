@@ -1,5 +1,5 @@
 const mongo = require('mongoose')
-const url = "mongodb://127.0.0.1:27017/crud"
+const url = process.env.DB_URL; 
 
 
 mongo.connect(url)
