@@ -7,9 +7,9 @@ const logger = require('morgan');
 const cors = require('cors')
 
 const corsOptions={
-   origin: process.env.FRONTEND_URL
+  //  origin: process.env.
   
-//origin:'*',
+origin:'*',
 }
 
 
