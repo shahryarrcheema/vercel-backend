@@ -3,6 +3,9 @@ const url = process.env.DB_URL;
 
 
 mongo.connect(url)
+.then(()=>{
+    console.log('mongo db connected')
+})
 
 const readRecord = async(Schema)=>{
     const dbRes=await Schema.find();
